@@ -1,0 +1,20 @@
+Project - front end , backend (MERN) M- MongoDB , E- Express js(Backend server) ,
+ R- React (frontend client) , N- Node.js (environment)
+Nodejs: Node. js is the runtime environment for execution of JavaScript code on the server side, coordinating communication between front-end and back-end components.
+
+Backend :
+1- create a server 
+2- Collection in MongoDB
+
+Express.js: Express.js is a web application framework for Node.js. It is designed for building web applications and APIs.
+MongoDB: MongoDB is a NoSQL database that stores data in JSON-like documents. It is a popular choice for building web applications because it is flexible and scalable.
+
+Step -1 : npm init -y : This will intialise a javascript project , -y is for yes to accept default values - This will create a package.json file.
+step 2: install and update dependencies - express, mongoose, nodemon
+spet 3: use Express to create server 
+    3.1 Import express 
+    3.2 call const app = express()
+    3.3 app.listen() // this will start the server
+    3.4: app.get or app.post, app.delete, app.create can be used to create paths or routing
+    3.5: app.use(express.json()) - This will let us acess req body
+    3.6 : to access and send req body back as respones user JSON.stringify(req.body)
