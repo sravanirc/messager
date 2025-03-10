@@ -18,3 +18,70 @@ spet 3: use Express to create server
     3.4: app.get or app.post, app.delete, app.create can be used to create paths or routing
     3.5: app.use(express.json()) - This will let us acess req body
     3.6 : to access and send req body back as respones user JSON.stringify(req.body)
+Ste 4: DATABASE:
+
+mongoDB - this is nosql database 
+tables - clusters 
+rows - document
+database - databse
+group of documents - collection
+    4.1 - Create a new project in mongoDB - named: messager
+    4.2 - Create a free new cluster (cluster is a collection of servers used to store and manage data)
+    4.3 - remeber username and password when creatin cluster 
+    4.4 - connect to cluster using drivers , npm install mongodb, copy the connection string
+5. 
+
+
+message: 
+{
+    "messageTitle":"This is the title of a message",
+    "messageBody":"Thsi is the body of the message",
+    "user":"this is the user who wrote this message"
+   
+}
+
+Create - post
+Update - put (editing a message)
+Delete - delete 
+read - get (fetch a message by id or title or all)
+
+server.js -  
+router.js - This will define the routes in a aplication - /newmessage - createnewmessage()
+/deletemessage/:id - deletemessagge()
+messages.controller.js - createmessage =>  
+
+MVC - model - view - controller 
+
+Model - this tells the application hte blueprint of our database 
+controller - contains all the business logic, database managemnt fucntions
+view - front end screen - user friendly 
+
+
+
+
+
+
+
+import express from "express";
+
+
+const app = express();
+
+app.get("/frinds");
+       "/newFriend" add a firend
+        "/deleteFrined" delete friend
+app.get("/posts");
+         "/createpost"
+         "/delete post
+         create update delete 
+app.get("/marketplace");
+         sell, find, edit
+
+
+app.get 
+app.listen(5000, ()=>{
+    console.og("I am server");
+});
+
+
+
