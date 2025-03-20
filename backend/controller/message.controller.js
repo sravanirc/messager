@@ -2,10 +2,8 @@ import { Message } from "../model/message.model.js";
 export const getAllMessages = async (req, res) => {
   try {
     const allMessages = await Message.find({});
-    // const stringAllMessages = JSON.stringify(allMessages);
-    res.status(200).json(allMessages);
 
-    // res.status(200).send(`Here are all the messages: ${stringAllMessages}`)
+    res.status(200).json(allMessages);
   } catch (error) {
     res.status(500).send("Error while fetchign all messages");
   }
@@ -53,7 +51,7 @@ export const editMessageByTime = async (req, res) => {
     const reply = await Message.findOneAndUpdate({ user: user }, newMessage, {
       new: true,
     });
-    // console.log("reply : ", reply);
+
     res.status(200).send("success in editing");
   } catch (e) {
     console.log(e);
