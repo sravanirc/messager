@@ -83,5 +83,27 @@ app.listen(5000, ()=>{
     console.og("I am server");
 });
 
+   [, setName]= useState("Sravani")
 
 
+let firstname = sravani
+let last name = ravuri
+
+useState() : 
+let [firstname , setFirstName ] = useState(" Sravani")
+const [user, setUser] = useState("");
+
+setFirstName("Theekshana"
+)
+
+useEffect( ()=>{
+    check is user logged in? 
+    check if databse conneted?
+    
+}, [user] ) = 
+
+useLocation() => 
+
+
+
+npm create vite@latest

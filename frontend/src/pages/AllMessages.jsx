@@ -1,5 +1,7 @@
+
 export default function AllMessages(){
-return(
-    <h2>This is the All message page</h2>
+
+    return(
+<div>View All messges </div>
 );
 }
